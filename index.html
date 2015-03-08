@@ -4,7 +4,7 @@
 <head>
 <meta charset="utf-8">
 
-<title>reveal.js - The HTML Presentation Framework</title>
+<title>Introduction to Amazon Web Services</title>
 
 <meta name="description" content="A framework for easily creating beautiful presentations using HTML">
 <meta name="author" content="Hakim El Hattab">
@@ -53,63 +53,138 @@ document.getElementsByTagName( 'head' )[0].appendChild( link );
 </section>
 
 <!-- contents -->
+<section>
 <section data-markdown>
 ## Contents
 * Ice Breaking
 * Customer Analysis
+* What is Cloud
 * Key Feature of AWS
 * AWS examples
 * Demonstration
+</section>
+<section id="themes">
+<h2>Supported Themes</h2>
+<!-- Hacks to swap themes after the page has loaded. Not flexible and only intended for the reveal.js demo deck. -->
+<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/black.css'); return false;">Black (default)</a> -
+<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/white.css'); return false;">White</a> -
+<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/league.css'); return false;">League</a> -
+<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/sky.css'); return false;">Sky</a> -
+<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/beige.css'); return false;">Beige</a> -
+<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/simple.css'); return false;">Simple</a> <br>
+<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/serif.css'); return false;">Serif</a> -
+<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/night.css'); return false;">Night</a> -
+<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/moon.css'); return false;">Moon</a> -
+<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/solarized.css'); return false;">Solarized</a>
+</p>
+</section>
 </section>
 
 <!-- ice braking, vertical -->
 <section>
 <section>
 <h2>Ice Breaking</h2>
-<small>for me</small>
-<p> This is the stroy about my NoSQL class</p>
-</section>
+<p><small>for me</small></p>
 
-<section>
-<h2> B2 </h2>
-</section>
+<ul>
+<li>This is the stroy about my NoSQL class</li>
+<li>Create 1,000,000 random user data for experiment
+<ul>
+<li>Uses AWS EC2 instance</li>
+<li>One student uses C </li>
+<li>Another student uses python </li>
+</ul>
+</li>
+</ul>
 </section>
 
 <section data-markdown>
-## Customer Analysis
-</section>
+## Result
+|Language| Setup | Code | Runtime | Total |
+|--------|-------|------|---------|-------|  
+|Python  |  5    |  5   |  10     |   20 (min) |
+|C       |  20   | 40   |  0.1    |   60 (min) |  
 
-<!-- Example of nested vertical slides -->
-<section>
-<section>
-<h2>Vertical Slides</h2>
-<p>Slides can be nested inside of each other.</p>
-<p>Use the <em>Space</em> key to navigate through all slides.</p>
-<br>
-<a href="#" class="navigate-down">
-<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
-</a>
-</section>
-<section>
-<h2>Basement Level 1</h2>
-<p>Nested slides are useful for adding additional detail underneath a high level horizontal slide.</p>
-</section>
-<section>
-<h2>Basement Level 2</h2>
-<p>That's it, time to go back up.</p>
-<br>
-<a href="#/2">
-<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Up arrow" style="-webkit-transform: rotate(180deg);">
-</a>
+* Winner is the student using python </p>
+* But there is no silver bullet </p>
+* How about Web Services? </p>
 </section>
 </section>
 
 <section>
-<h2>Slides</h2>
-<p>
-Not a coder? Not a problem. There's a fully-featured visual editor for authoring these, try it out at <a href="http://slides.com" target="_blank">http://slides.com</a>.
-</p>
+<img src= "https://s3-ap-northeast-1.amazonaws.com/slidesnx/silver.jpg" />
 </section>
+<section data-transition="slide" data-background="#4d7e65" data-background-transition="zoom">
+<img src="https://s3-ap-northeast-1.amazonaws.com/slidesnx/amazon_web_services.jpg"/>
+</section>
+
+<section data-markdown>
+### Customer Analysis
+#### Outback Industries Limited 
+* 500 person organization in Australia
+* solid growth over 2 year / plan to expand to United States
+* have ERP system based on Java with Oracle
+* uses MS Exchange, Share Point
+* host website include heavy graphic data
+* hosted in their local data center
+* **experiences spike in traffic**
+</section>
+
+<!-- virtualization -->
+<section>
+<h3>What is "Cloud Computing"?</h3>
+<section>
+<ul>
+<li>Oraganizations shares computing and storage resources with it</li>
+<li>Include comuter power, storage, databases, msessing, and so on</li>
+<li>It's based on virtualization</li>
+</ul>
+<img src="https://s3-ap-northeast-1.amazonaws.com/slidesnx/Virtualization_Cloud.jpg" width="400">
+</section>
+<section>
+<h4> Virtualization </h4>
+<ul>
+<li> create virtual machine acts like a real computer </li>
+<li> hardware virtualization VS paravirtualization</li>
+<li> AWS supports both</li>
+</ul>
+<img src="https://s3-ap-northeast-1.amazonaws.com/slidesnx/pravirtualization.jpg" width="400">
+</section>
+</section>
+
+<!-- youtube video -->
+<section>
+<h3> What is Amazon Web Services </h3>
+<p><a href = "http://youtu.be/mZ5H8sn_2ZI">YouTube Video Clip </a></p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/mZ5H8sn_2ZI" frameborder="0" allowfullscreen></iframe>
+</section>
+<!-- key features of AWS -->
+<section>
+<h3> The Differences that Distinguish AWS</h3>
+<ul>
+<li> Flexible </li>
+<li> Cost-effective</li>
+<li> Scalable and elasitc</li>
+<li> Secure </li>
+<li> Experienced </li>
+</section>
+<!-- key services of AWS -->
+<section>
+<h3> Key Services of Amazon Web Services </h3>
+<ul> 
+<li>Compute: Elastic Compute Cloud</li>
+<li>Storage: Simple Storage Service</li>
+<li>Database: Relational Database Service</li>
+<li>Database: ElastiCache</li> 
+</ul>
+</section>
+
+
+<!-- end of hoyoung -->
+
+
+
+
 
 <section>
 <h2>Point of View</h2>
@@ -183,23 +258,7 @@ You can select from different transitions, like: <br>
 </p>
 </section>
 
-<section id="themes">
-<h2>Themes</h2>
-<p>
-reveal.js comes with a few themes built in: <br>
-<!-- Hacks to swap themes after the page has loaded. Not flexible and only intended for the reveal.js demo deck. -->
-<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/black.css'); return false;">Black (default)</a> -
-<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/white.css'); return false;">White</a> -
-<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/league.css'); return false;">League</a> -
-<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/sky.css'); return false;">Sky</a> -
-<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/beige.css'); return false;">Beige</a> -
-<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/simple.css'); return false;">Simple</a> <br>
-<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/serif.css'); return false;">Serif</a> -
-<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/night.css'); return false;">Night</a> -
-<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/moon.css'); return false;">Moon</a> -
-<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/solarized.css'); return false;">Solarized</a>
-</p>
-</section>
+
 
 <section>
 <section data-background="#dddddd">
