@@ -41,8 +41,8 @@ document.getElementsByTagName( 'head' )[0].appendChild( link );
 <!-- Any section element inside of this container is displayed as a slide -->
 <div class="slides">
 <section>
-<h2>AWS Essential subnotes </h2>
-<h4>June, 9, 2015</h4>
+<h2>AWS Essential Note</h2>
+<h4>June 9, 2015</h4>
 <p>
 <small><a href="mailto://hoyoungj@amazon.com">Hoyoung Jung</a> </small>
 </p>
@@ -64,10 +64,21 @@ document.getElementsByTagName( 'head' )[0].appendChild( link );
 * 5교시: AWS 배포 및 관리 
 * QnA, 교육평가
 </section>
+<section>
+<h3>교육 시간표</h3>
+<img src="https://s3-ap-northeast-1.amazonaws.com/awskr/img/ess-time.png">
+</section>
+
+<section data-markdown>
+### AWS Essential 과정의 학습목표
+* AWS를 익숙하게 사용할 수 있는 기본지식의 습득
+* 비지니스 요구사항을 토대로 IT 솔루션에 대한 보다 현명한 의사결정을 내릴 수 있다.
+</section>
+
 <section id="themes">
 <h2>Supported Themes</h2>
 <!-- Hacks to swap themes after the page has loaded. Not flexible and only intended for the reveal.js demo deck. -->
-<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/black.css'); return false;">Black (default)</a> -
+<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/black.css'); return false;">Black</a> -
 <a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/white.css'); return false;">White</a> -
 <a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/league.css'); return false;">League</a> -
 <a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/sky.css'); return false;">Sky</a> -
@@ -85,233 +96,81 @@ document.getElementsByTagName( 'head' )[0].appendChild( link );
 <section>
 <section data-markdown>
 ## 1교시: AWS의 역사 및 소개
-#### Public AWS status
+### 학습목표
+* AWS Management Console 탐색
+* AWS 글로벌 인프라 파악
+* AWS에서 제공하는 보안기능 파악
 </section>
+
+<section>
+<h3>What is Cloud Computing? </h3>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/jOhbTAU4OPI" frameborder="0" allowfullscreen></iframe>
+</section>
+
+<section>
+<h3>클라우드의 기원</h3>
+<img src="https://s3-ap-northeast-1.amazonaws.com/awskr/img/cloud.png" width="300"> <br>
+<a href="http://ux.stackexchange.com/questions/37669/what-s-the-origin-of-the-metaphor-cloud">
+  http://ux.stackexchange.com/questions/37669/what-s-the-origin-of-the-metaphor-cloud</a> 
+</section>
+<section>
+<h3>What is Amazon Web Services? </h3>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/mZ5H8sn_2ZI" frameborder="0" allowfullscreen></iframe>
+</section>
+
 <section data-markdown>
 ### Public AWS Status (Update June, 9, 2015)
-* 190 국가에서 백만 이상의 활성화된 고객 - 1500 정부기관, 3600 교육기관, 11200 비영리기관 포함
-* AWS는 $5B 이상의 규모로 매우 빠르게 성장 (49% Q1 15)
-* 11개 Region, 53 Edge location (가장 최근: 프랑크푸르트) 
+* 190개 국가에서 백만 이상의 고객 보유 - 1500 정부기관, 3600 교육기관, 11200 비영리단체 포함
+* AWS는 $5B 이상의 규모로 매우 빠르게 성장 (15년 Q1 49%)
+* 11개 Region, 30AZ, 53 Edge location (최근: 프랑크푸르트) 
 * 2006년 launch 이후로 48번의 가격 할인
-* Amazon이 $7B였을 때의 규모만큼의 매일 새로운 서버를 추가  
+* Amazon 매출이 $7B 당시의 규모만큼의 서버를 매일 추가
 </section>
+
+<section data-markdown>
+#### AWS Obama for America
+http://awsofa.info 
+</section>
+
+<section data-markdown>
+### 무료 실습 가능 사이트
+http://run.qwiklab.com
+</section>
+
 </section>
 
 <!-- 2교시 -->
 <section>
 <section data-markdown>
-## 1교시: AWS의 역사 및 소개
-#### Public AWS status
+### 2교시: AWS 스토리지 및 콘텐츠 전송
+### 학습목표
+* 주요 AWS 스토리지 옵션 습득
+* Amazon Elastic Block Store (EBS) 설명
+* Amazon S3 버킷 생성 및 관련 객체 관리
 </section>
 <section data-markdown>
-### Public AWS Status (Update June, 9, 2015)
-* 190 국가에서 백만 이상의 활성화된 고객 - 1500 정부기관, 3600 교육기관, 11200 비영리기관 포함
-* AWS는 $5B 이상의 규모로 매우 빠르게 성장 (49% Q1 15)
-* 11개 Region, 53 Edge location (가장 최근: 프랑크푸르트) 
-* 2006년 launch 이후로 48번의 가격 할인
-* Amazon이 $7B였을 때의 규모만큼의 매일 새로운 서버를 추가  
+### subnotes
 </section>
 </section>
 
 
-
-
+<!-- 3교시 -->
+<section>
 <section data-markdown>
-## Result
-|Language| Setup | Code | Runtime | Total |
-|--------|-------|------|---------|-------|  
-|Python  |  5    |  5   |  10     |   20 (min) |
-|C       |  20   | 40   |  0.1    |   60 (min) |  
-
-* Winner is the student using python </p>
-* But there is no silver bullet </p>
-* How about Web Services? </p>
+### 3교시: AWS 컴퓨팅 서비스 및 네트워킹
+### 학습목표
+* 다양한 AWS 컴퓨팅 및 네트워크 옵션 습득
+* Amazon Virtual Private Cloud(VPC) 설명
+* Amazon EC2 인스턴스 생성
+* Amazon Elastic Block Store 사용 방법 확인
 </section>
-</section>
-
-<section>
-<img src= "https://s3-ap-northeast-1.amazonaws.com/slidesnx/silver.jpg" />
-</section>
-<section data-transition="slide" data-background="#4d7e65" data-background-transition="zoom">
-<img src="https://s3-ap-northeast-1.amazonaws.com/slidesnx/amazon_web_services.jpg"/>
-</section>
-
 <section data-markdown>
-### Customer Analysis
-#### Outback Industries Limited 
-* 500 person organization in Australia
-* solid growth over 2 year / plan to expand to United States
-* have ERP system based on Java with Oracle
-* uses MS Exchange, Share Point
-* host website include heavy graphic data
-* hosted in their local data center
-* **experiences spike in traffic**
-</section>
-
-<!-- virtualization -->
-<section>
-<h3>What is "Cloud Computing"?</h3>
-<section>
-<ul>
-<li>Oraganizations shares computing and storage resources with it</li>
-<li>Include comuter power, storage, databases, msessing, and so on</li>
-<li>It's based on virtualization</li>
-</ul>
-<img src="https://s3-ap-northeast-1.amazonaws.com/slidesnx/Virtualization_Cloud.jpg" width="400">
-</section>
-<section>
-<h4> Virtualization </h4>
-<ul>
-<li> create virtual machine acts like a real computer </li>
-<li> hardware virtualization VS paravirtualization</li>
-<li> AWS supports both</li>
-</ul>
-<img src="https://s3-ap-northeast-1.amazonaws.com/slidesnx/pravirtualization.jpg" width="400">
-</section>
-</section>
-
-<!-- youtube video -->
-<section>
-<h3> What is Amazon Web Services </h3>
-<p><a href = "http://youtu.be/mZ5H8sn_2ZI">YouTube Video Clip </a></p>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/mZ5H8sn_2ZI" frameborder="0" allowfullscreen></iframe>
-</section>
-
-<section>
-<h3>Amazon Global Infrastructure</h3>
-<img src="https://s3-ap-northeast-1.amazonaws.com/slidesnx/gsgs.png">
-<p>Regions, Avalability Zones, Edge Locations</p>
-</section>
-<!-- key features of AWS -->
-<section>
-<h3> The Differences that Distinguish AWS</h3>
-<ul>
-<li> Flexible </li>
-<li> Cost-effective</li>
-<li> Scalable and elasitc</li>
-<li> Secure </li>
-<li> Experienced </li>
-</section>
-<!-- key services of AWS -->
-<section>
-<section>
-<h3> Key Services of Amazon Web Services </h3>
-<ul> 
-<li>Compute: Elastic Compute Cloud</li>
-<li>Storage: Simple Storage Service</li>
-<li>Database: Relational Database Service</li>
-<li>Database: ElastiCache</li> 
-</ul>
-</section>
-<section>
-<img src="https://s3-ap-northeast-1.amazonaws.com/slidesnx/aws_console.png">
+### subnotes
 </section>
 </section>
 
 
-<!-- when use physical server-->
-<section>
-<h3>If you use physical server... </h3>
-<ul>
-<li>takes 2 weeks to setup</li>
-<li>expensive initial cost</li>
-<li>need to predict maximum utilization of server</li>
-<li>hard to terminate when no more needed</li>
-</ul>
-<img src = "https://s3-ap-northeast-1.amazonaws.com/slidesnx/physical.png" width="400">
-</section>
-
-<section>
-<h3>Amazon Elastic Compute Cloud</h3>
-<ul>
-<li>Virtual Servers in the cloud</li>
-<li>Provides simple web interfaces and APIs to control</li>
-<li>Reduces time required to obtain </li>
-<li>Quickly scaling up and down </li>
-<img src="https://s3-ap-northeast-1.amazonaws.com/slidesnx/awsec2.png"width="400">
-</ul>
-</section>
-
-<section>
-<h3>Amazon Relational Database </h3>
-<ul>
-<li>support MySQL, Oracle, MS SQL, PostgreSQL </li>
-<li>enhance availability and reliablity via replication </li>
-<li>provides Multi-AZ for availability and durability</li>
-</section>
-
-<section>
-<h3>Amazon Simple Storage Service </h3>
-<ul>
-<li>provide secure, durable, highly scalable object storage</li>
-<li>low prices than EC2 using EBS </li>
-</ul>
-</section>
-
-<section>
-<h3>Other Amazon Web Services</h3>
-<ul>
-<li>Glacier </li>
-<li>CloudFront </li>
-<li>DynamoDB</li>
-<li>CloudWatch </li> 
-<li>Route 53</li>
-</ul>
-</section>
-
-
-<section>
-<h3><a href="http://aws.amazon.com/ko/solutions/case-studies/devsisters/">
-	Example: DEVSISTERS </a> </h3>
-<ul>
-<li>For game server in US</li>
-<li>hard to control spike when using IDC </li>
-<li>Uses AMI, EC2 auto scaling,S3, Redis and ELB </li>
-</ul>
-<img src="https://s3-ap-northeast-1.amazonaws.com/slidesnx/devsisters.png">
-</section>
-<section>
-<img src="https://s3-ap-northeast-1.amazonaws.com/slidesnx/devsisters-graph.png">
-</section>
-
-<section>
-<img src="https://s3-ap-northeast-1.amazonaws.com/slidesnx/arch-Devsisters.png">
-</section>
-
-<section>
-  <h3>For Outback Industries Limited</h3>
-  <section>
-  <h4>EC2 Instance with Oracle RDS </h4>
-  <ul>
-  	<li>for ERP system</li>
-  	<li>flexible and cost effective</li>
-  	<li>easy to create and deploy instances at US region</li> 
-  	<li>easy to migrate existing ERP system</li>
-  	<li>also support MS Exchange and Sharepoint </li>
-  </ul>
-
-  </section>
-  <section>
-  <h4>EC2 Instance with S3,CloudFront, ELB</h4>
-  <ul>
-  	<li>S3 handles heavy graphics and static web pages </li>
-  	<li>CloudFront support multi-region with fast response time</li> 
-  	<li>Autoscaling with ELB can handle spikes </li> 
-  </ul>
-    <img src="https://s3-ap-northeast-1.amazonaws.com/slidesnx/cost1.png">
-  <img src="https://s3-ap-northeast-1.amazonaws.com/slidesnx/cost2.png">
-  </section>
-  </section>
-
-<section>
-<h1>Demonstration</h1>
-<p>This slides and pictures are serviced with EC2 and S3!</p>
-<ul>
-<li>create EC2 instance </li>
-<li>create S3 bucket</li>
-<li>create RDS instance </li>
-</ul>
-</section>
+  
 
 
 <!-- end of hoyoung -->
